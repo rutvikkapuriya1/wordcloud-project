@@ -142,7 +142,7 @@ function draw(words) {
                 .attr("class", "tooltip")
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 20) + "px")
-                .text(`Count: ${d.size}`)
+                .text(`${d.text}: ${d.size}`)
                 .style("display", "block");
         })
         .on("mouseout", function () {
